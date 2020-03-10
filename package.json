@@ -7,7 +7,7 @@
     "start": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alexandre Carvalho",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.2"
