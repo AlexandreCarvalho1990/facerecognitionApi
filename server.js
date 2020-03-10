@@ -22,10 +22,11 @@ app.use(cors());
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 app.get('/', (req, res)=>{
-	db.select('*').from('users')
-	.then(result =>{
-		res.send(result)
-	})
+  res.send('it is working');
+	// db.select('*').from('users')
+	// .then(result =>{
+	// 	res.send(result)
+	// })
 })
 app.post ('/signin', signIn.handleSignIn(db,bcrypt,saltRounds));
 app.post ('/register', register.handleRegister(db,bcrypt,saltRounds));
